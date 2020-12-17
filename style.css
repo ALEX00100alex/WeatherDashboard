@@ -1,0 +1,32 @@
+
+.header {
+font-size: 50px;
+color: white;
+background-color: black;
+text-align: center;
+}
+
+#h2 {
+margin-left:17%;
+}
+
+#card-list {
+margin-left: 5px;
+margin-top: 5px;
+position: relative;
+}
+
+.list-group {
+margin-top: 10px;
+}
+
+.list-group-item {
+ height: 65px;   
+}
+
+#main {
+margin-left: 25%;
+width: 800px;
+position: absolute 
+}
+

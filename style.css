@@ -24,15 +24,9 @@ margin-top: 10px;
  height: 65px;   
 }
 
-/* #main {
-margin-left: 25%;
-width: 800px;
-position: absolute
-} */
-
 .boxes {
 background-color: blue;
-height: 100px;
+height: 200px;
 width: 100px;
 margin-left: 10px;
 }

@@ -24,9 +24,19 @@ margin-top: 10px;
  height: 65px;   
 }
 
-#main {
+/* #main {
 margin-left: 25%;
 width: 800px;
-position: absolute 
+position: absolute
+} */
+
+.boxes {
+background-color: blue;
+height: 100px;
+width: 100px;
+margin-left: 10px;
 }
 
+#row-3 {
+margin-top: 100px;
+}

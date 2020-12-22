@@ -56,8 +56,8 @@ function displayForecast (data) {
         <div class="col-md-2 boxes">
             <h4>${date}</h4>
             <img src='http://openweathermap.org/img/wn/${icon}@2x.png'>
-            <p>temp: ${temp}&deg;F</p>
-            <p>humidity: ${humidity}%</p>   
+            <p>Temp: ${temp}&deg;F</p>
+            <p>Humidity: ${humidity}%</p>   
         </div>
         `;
     }
@@ -72,9 +72,9 @@ function displayCityData(data) {
     let date = (new Date(data.dt*1000)).toDateString();
     var html = `
         <h2>${city} ${date}</h2> 
-        <p>temp: ${temp}&deg;F</p>
-        <p>humidity: ${humid}%</p>
-        <p>wind speed: ${wind}mph</p>
+        <p>Temp: ${temp}&deg;F</p>
+        <p>Humidity: ${humid}%</p>
+        <p>Wind Speed: ${wind}mph</p>
     `;
     $("#main .card-body").html(html);
  }

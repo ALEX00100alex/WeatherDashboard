@@ -34,3 +34,15 @@ margin-left: 10px;
 #row-3 {
 margin-top: 100px;
 }
+
+.favorable {
+color: green;
+}
+
+.moderate {
+color: orange;
+}
+
+.severe {
+color: red;    
+}

@@ -43,10 +43,22 @@ function getForecast(lat,long){
     }).then(displayForecast);
 }
 
+function displayUV (UV) {
+    let UVclass = "favorable";
+    if(UV > 6) {
+        UVclass = "severe";  
+    } else if (UV>=3) {
+        UVclass = "moderate";
+    }
+    $("#UV").addClass(UVclass).text("UV index: " + UV);
+}
+
 function displayForecast (data) {
     console.log(data);
+    let UV = data.daily[0].uvi;
+    displayUV(UV); 
     var html = '<h3>5 Day Forecast:</h3>';
-    for (let i=0; i<5; i++) {
+    for (let i=1; i<6; i++) {
         let day=data.daily[i];
         let temp=day.temp.day;
         let humidity=day.humidity;
@@ -70,11 +82,14 @@ function displayCityData(data) {
     var humid = data.main.humidity;
     var wind = data.wind.speed;
     let date = (new Date(data.dt*1000)).toDateString();
+    let icon = data.weather[0].icon;
     var html = `
         <h2>${city} ${date}</h2> 
+        <img src='http://openweathermap.org/img/wn/${icon}@2x.png'>
         <p>Temp: ${temp}&deg;F</p>
         <p>Humidity: ${humid}%</p>
         <p>Wind Speed: ${wind}mph</p>
+        <p id="UV"></p>
     `;
     $("#main .card-body").html(html);
  }

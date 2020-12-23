@@ -88,7 +88,7 @@ function displayCityData(data) {
         <img src='http://openweathermap.org/img/wn/${icon}@2x.png'>
         <p>Temp: ${temp}&deg;F</p>
         <p>Humidity: ${humid}%</p>
-        <p>Wind Speed: ${wind}mph</p>
+        <p>Wind Speed: ${wind} mph</p>
         <p id="UV"></p>
     `;
     $("#main .card-body").html(html);

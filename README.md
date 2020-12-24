@@ -7,7 +7,8 @@ A dynamic weather dashboard using the OpenWeather API
 This is my first attempt at building a weather dashboard app, incorporating the following elements:
 1. HTML
 2. CSS 
-3. jQuery 
+3. jQuery
+4. Ajax call 
 
 ## Code Style
 

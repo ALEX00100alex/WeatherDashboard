@@ -45,11 +45,11 @@ Here is a screenshot of the Dashboard displaying a new city search, and the city
 
 ## Contribute
 
-Want to contribute? You can find the github repo here: 
+Want to contribute? You can find the github repo here: https://github.com/ALEX00100alex/WeatherDashboard 
 
 ## Links
 
-Github Website link: https://alex00100alex.github.io/DailyPlanner/
+Github Website link: https://alex00100alex.github.io/WeatherDashboard/ 
 
 ## Credits
 
